@@ -42,6 +42,8 @@ if __name__ == '__main__':
     x_train = sequence.pad_sequences(x_train_seq,maxlen=100)#利用方法进行取长补短操作
     x_test = sequence.pad_sequences(x_test_seq,maxlen=100)
 
+    print(x_train[0])
+    print(type(x_train))
     ''' 
     测试数据正确
     查看评价信息
